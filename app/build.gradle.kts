@@ -42,6 +42,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.material3)
+
+    // read and write files
+    implementation(libs.commons.io)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
