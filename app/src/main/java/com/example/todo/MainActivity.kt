@@ -35,9 +35,11 @@ class MainActivity : AppCompatActivity() {
             override fun onItemLongClicked(position: Int) {
                 // 1. Remove the item from the list
                 listOfTasks.removeAt(position)
+
                 // 2. Notify the adapter that our data set has changed
                 adapter.notifyDataSetChanged()
 
+                // 3. Save the changes
                 saveItems()
             }
         }
@@ -73,6 +75,7 @@ class MainActivity : AppCompatActivity() {
             // reset text field
             inputTextField.setText("")
 
+            // save items by writing them into our data file
             saveItems()
         }
     }
